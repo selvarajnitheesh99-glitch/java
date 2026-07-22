@@ -1,0 +1,23 @@
+package day5;
+import java .util.Scanner;
+public class neon_number {
+    public static void main(String[] args){
+        Scanner sr=new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num=sr.nextInt();
+        int sum=0;
+        int sq=num+num;
+
+        while(sq>0){
+            int last=sq%10;
+            sum+=last;
+            sq/=10;
+        }
+        if(sum==num){
+            System.out.println("it is neon number");
+        }
+        else{
+            System.out.println("it is not s neon number");
+        }
+    }
+}
