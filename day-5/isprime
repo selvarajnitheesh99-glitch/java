@@ -1,0 +1,14 @@
+package day5;
+import java.util.Scanner;
+public class isprime {
+    public static void main(String[] args){
+        Scanner sr=new Scanner(System.in);
+        int a=sr.nextInt();
+        if(a % 2==1){
+            System.out.println(a+": it is prime");
+        }
+        else{
+            System.out.println(a+": it is not prime");
+        }
+    }
+}
