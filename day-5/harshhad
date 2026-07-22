@@ -1,0 +1,22 @@
+package day5;
+import java.util.Scanner;
+public class harshhad {
+    public static void main (String[] args){
+        Scanner sr=new Scanner(System.in);
+        int n=sr.nextInt();
+        int total=n;
+        int sum=0;
+
+        while(n!=0){
+            int r=n%10;
+            sum+=r;
+            n/=10;
+        }
+        if(total%sum==0){
+            System.out.println("it is harshad");
+        }
+        else{
+            System. out. println("it is not a harshad");
+        }
+    }
+}
